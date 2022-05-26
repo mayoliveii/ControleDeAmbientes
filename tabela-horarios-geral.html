@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="autora"      content="Mayara Oliveira">
+	
+	<title>Controle de Ambientes</title>
+
+	<link rel="shortcut icon" href="assets/images/logo.labtec.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Estilo personalizado -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/desing-tabelas.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="home">
+	<!-- navbar fixo -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Botão para telas menores-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo-horizontal.png" alt="Logo do LabTec"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="curso.html">Curso</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nossos aplicativos <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="apresentacao-salascesfi.html">Salas CESFI</a></li>
+							<li class="active"><a href="apresentacao-localiza-ongs.html">Localiza ONG</a></li>
+						</ul>
+					</li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a class="btn" href="signin.html">ENTRAR / SAIR</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+ <header>
+     <div id="identificacao-do-ambiente">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Selecione um ambiente</option>
+            <option value="1"><a href="tabela-horarios-geral.html">Sala 27</a></option>
+            <option value="2">Anexo 2</option>
+            <option value="3">Sala 24</option>
+          </select>
+     </div>
+     <div class="grade">
+        <div class='tab'>
+        <table id='tabela-style'>
+          <tr class='days'>
+            <th></th>
+            <th>Segunda-feira</th>
+            <th>Terça-feira</th>
+            <th>Quarta-feira</th>
+            <th>Quinta-feira</th>
+            <th>Sexta-feira</th>
+          </tr>
+          <tr>
+            <td class='time'>08:20 - 09:10</td>
+            <td class='cs335 blue' data-tooltip='Professor Eduardo Paiva'>TRANSFERÊNCIA DE CALOR II</td>
+            <!--<td class='cs426 purple' data-tooltip='Computer Graphics'><div class="moduleName">DIA DO PETRÓLEO </div><div class="moduleLocation">EVENTO</div></td> -->
+            <td class='cs426 green ' data-tooltip='Professora Michelle Schimt'>MÉTODOS DE ELEVAÇÃO</td>
+            <td class='cs335 purple' data-tooltip='Professor Eduardo Paiva'>CÁLCULO NUMÉRICO </td>
+            <td></td>
+            <td class='cs335 purple' data-tooltip='Professor Eduardo Paiva'>CÁLCULO NUMÉRICO </td>
+          </tr>
+          <tr>
+            <td class='time'>09:10 - 10:00</td>
+            <td class='cs335 blue' data-tooltip='Professor Eduardo Paiva'>TRANSFERÊNCIA DE CALOR II</td>
+            <td class='cs426 green ' data-tooltip='Professora Michelle Schimt'>MÉTODOS DE ELEVAÇÃO</td>
+            <td class='cs335 purple' data-tooltip='Professor Eduardo Paiva'>CÁLCULO NUMÉRICO </td>
+            <td></td>
+            <td class='cs335 purple' data-tooltip='Professor Eduardo Paiva'>CÁLCULO NUMÉRICO </td>
+          </tr>
+          <tr>
+            <td class='time'>10:20 - 11:10</td>
+            <td class='cs335 blue' data-tooltip='Professor Eduardo Paiva'>TRANSFERÊNCIA DE CALOR II</td>
+            <td></td>
+            <td class='cs335 red' data-tooltip='Professor Francisco Germano'>ENGENHARIA DE POÇO II</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class='time'>11:10 - 12.00</td>
+            <td></td>
+            <td></td>
+            <td class='cs335 red' data-tooltip='Professor Francisco Germano'>ENGENHARIA DE POÇO II</td>
+            <td></td>
+            <td>-</td>
+          </tr>
+          <tr class="intervalo">
+            <td class='time'>12:00 - 13:30</td>
+              <td class='cs335 interv'></td>
+              <td class='cs335 interv'></td>
+              <td class='cs335 interv'></td>
+              <td class='cs335 interv'></td>
+              <td class='cs335 interv'></td>
+          </tr>
+          <tr>
+            <td class='time'>13:30 - 14:20</td>
+            <td class='cs335 red' data-tooltip='Professor Francisco Germano'>ENGENHARIA DE POÇO II</td>
+            <td class='cs426 orange' data-tooltip='Professor Luiz Hegele'>ENG. DE RESERVATÓRIOS II</td>
+            <td class='cs426 orange' data-tooltip='Professor Luiz Hegele'>ENG. DE RESERVATÓRIOS II</td>
+            <td></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class='time'>14:20 - 15:10</td>
+            <td class='cs335 red' data-tooltip='Professor Francisco Germano'>ENGENHARIA DE POÇO II</td>
+            <td class='cs426 orange' data-tooltip='Professor Luiz Hegele'>ENG. DE RESERVATÓRIOS II</td>
+            <td class='cs426 orange' data-tooltip='Professor Luiz Hegele'>ENG. DE RESERVATÓRIOS II</td>
+            <td</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class='time'>15:20 - 16:10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class='time'>16:10 - 17:00</td>
+            <td class='cs426 green ' data-tooltip='Professora Michelle Schimt'>MÉTODOS DE ELEVAÇÃO</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class='time'>17:00 - 17:50</td>
+            <td class='cs426 green ' data-tooltip='Professora Michelle Schimt'>MÉTODOS DE ELEVAÇÃO</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+</header>
+
+
+
+</body>
